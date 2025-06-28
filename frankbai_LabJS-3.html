@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab JavaScript 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>Exact Division by 3 and 7 at the Sametime</div>
+    <button onclick="exactDivList()">
+      Exact Division by 3 and 7 at the Sametime
+    </button>
+    <!-- <div function="exactDivList()"></div> -->
+    <!-- <script src="script.js"></script> -->
+    <div id="exactDivList"></div>
+
+    <div class="container">
+      <!-- <form id="formLogin"> 加一层FORM,页面就会刷新跳转回初始-->
+      <h1>Please input your username and password</h1>
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="User Name"
+        required
+      />
+      <input
+        type="text"
+        name="passWord"
+        id="passWord"
+        placeholder="Password"
+        required
+      />
+      <div>
+        <button onclick="checkLogin()">Log In</button>
+      </div>
+      <div id="formInput"></div>
+      <!-- </form> -->
+
+      <div id="formATM" class="hidden">
+        <h2>ATM</h2>
+        <button onclick="showBalance()">Disply Balance</button>
+        <h1 id="showBalance"></h1>
+        <input type="number" name="depositCount" , id="depositCount" />
+        <button onclick="depositCount()">Deposit</button>
+        <input type="number" name="withdrawCount" , id="withdrawCount" />
+        <button onclick="withdrawCount()">Withdraw</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
